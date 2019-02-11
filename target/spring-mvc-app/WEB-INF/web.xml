@@ -17,6 +17,11 @@
   	<param-value>/WEB-INF/HelloWeb-servlet.xml</param-value>
   </context-param>
   
+  <!-- The definition of the Root Spring Container shared by all Servlets and Filters -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/root-context.xml</param-value>
+	</context-param>
   
   <servlet-mapping>
   	<servlet-name>HelloWeb</servlet-name>
